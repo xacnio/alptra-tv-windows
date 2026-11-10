@@ -1,0 +1,33 @@
+name: Bug report
+description: Something doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: You can write in English or Turkish. Türkçe de yazabilirsin.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings → About
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Windows version and how you installed it
+      placeholder: e.g. Windows 11 24H2, installer (x64)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else

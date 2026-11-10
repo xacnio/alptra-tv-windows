@@ -1,0 +1,14 @@
+name: Idea
+description: Suggest a feature or an improvement
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: You can write in English or Turkish. Türkçe de yazabilirsin.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: What should the app do, and what would you use it for?
+    validations:
+      required: true
